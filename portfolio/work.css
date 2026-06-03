@@ -1,0 +1,188 @@
+/*=============== BASE STYLES ===============*/
+/* Reset default browser styling */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-image:url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+/*=============== HEADER & NAVIGATION ===============*/
+#logo{
+    font-family:'Syne',sans-serif;
+    font-size: 50px;
+}
+
+/* Main navigation container */
+#container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+#logo{
+    font-family:'Syne', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation menu links */
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Navigation hover effect */
+nav ul li a:hover{
+    color:blueviolet;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+/* Active page indicator */
+#active{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+
+/*=============== MAIN SECTION ===============*/
+/* Projects section heading */
+main{
+   margin: 2rem 0;
+   padding: 0 10%;
+}
+
+main h2{
+    font-family: 'Syne',sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main span{
+    color: blueviolet;
+}
+
+/*=============== PROJECT CARD ===============*/
+/* Project card container */
+#card{
+    position: relative;
+    background:linear-gradient(to bottom right,
+            rgba(255, 255, 255, 0),
+            rgba(50, 31, 74, 0.8));
+    padding: 1.5rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+/* Card content layers */
+#number, #data, #image{
+    position: relative;
+    z-index:1;
+}
+
+/* Project number and category */
+#number{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Project description */
+#data{
+    margin-block: 2rem;
+}
+
+#data h1{
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/*=============== PROJECT IMAGE ===============*/
+/* Project image container */
+#image{
+    border-radius: 1.5rem;
+}
+
+img{
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 30rem;
+}
+
+/* External project link button */
+#image a{
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: black;
+    border: 3px solid;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: box-shadow .4s, opacity .4s;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* Link hover effects */
+#image a:hover{
+    box-shadow: 0 0 24px blueviolet;
+}
+
+#image:hover a{
+    opacity: 1;
+    pointer-events: initial;
+}
+
+/*=============== SWIPER CAROUSEL ===============*/
+/* Carousel container */
+#swiperer {
+  margin-inline: initial;
+  padding-bottom: 2rem;
+  width: 100%;        
+  overflow: hidden;  
+}
+
+/* Individual project slides */
+.swiper-slide {
+  width: 300px;      
+  height: 400px;      
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background-color: blueviolet !important;
+  opacity: 0.5 !important;
+}
+
+/* Active pagination bullet */
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1 !important;}

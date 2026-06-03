@@ -1,0 +1,209 @@
+/*=============== BASE STYLES ===============*/
+/* Reset default browser styling */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-image:url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+/*=============== HEADER & NAVIGATION ===============*/
+#logo{
+    font-family:'Syne',sans-serif;
+    font-size: 50px;
+}
+
+/* Main navigation container */
+#container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+#logo{
+    font-family:'Syne', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation menu links */
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Navigation hover effect */
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+nav ul li a:hover{
+    color:blueviolet;
+    font-size: 25px;
+    transition: 0.4s;
+}
+/* Active page indicator */
+#active{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+/*=============== CONTACT SECTION ===============*/
+/* Main container for contact page layout */
+main{
+   margin: 2rem 0;
+   padding: 0 7%;
+}
+
+main h2{
+    font-family: 'Syne',sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+span{
+    color: blueviolet;
+}
+
+/*=============== CONTACT LAYOUT ===============*/
+/* Container holding form and contact info */
+#con{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;  
+}
+
+#cform{
+    flex: 1;
+    position:relative;
+    row-gap: 1rem;
+}
+
+#cgroup{
+    position:relative;
+}
+
+/*=============== FORM INPUTS ===============*/
+/* Input fields styling */
+.input{
+    width: 100%;
+    background:hsla(275, 38%, 13%, 0.563);
+    color: white;
+    padding: 1.25rem;
+    border-radius: 4rem;
+    border: none;
+    margin: 2rem;
+}
+
+
+/* Floating label styling */
+.label{
+    position: absolute;
+    top: 2.5rem;
+    left:4.3rem;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    font-size:1.5rem;
+}
+
+/* Hide label when input is focused or valid */
+.input:focus ~ .label, .input:valid ~ .label{
+    opacity: 0;
+}
+
+#textbox{
+    height:10rem;
+    border-radius: 1.5rem;
+    resize: none;
+}
+
+#cform button{
+    color:white;
+    background:linear-gradient(90deg,blueviolet,black);
+    border: none;
+    border-radius: 4rem;
+    outline: none;
+    padding: 1rem 3rem;
+    margin: 1rem 2.8rem;
+}
+
+button span{
+    font-size: 2rem;
+    font-family: 'Syne', sans-serif;
+    color: white;
+}
+
+/*=============== CONTACT INFO CARDS ===============*/
+/* Right side contact info container */
+#ccon{
+    flex: 1;
+    margin-top: 6rem;
+}
+
+#link{
+    background: linear-gradient(to bottom right,
+            rgba(255, 255, 255, 0),
+            rgba(50, 31, 74, 0.8));
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-decoration:none;
+}
+
+#info{
+    display:flex;
+    column-gap:1rem;
+    align-items: center;
+    color: white;
+}
+
+#info i{
+    font-size: 1.5rem;
+    color:blueviolet;
+}
+
+#info h3{
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+#arrow{
+    background: black;
+    border-radius: 3rem ;
+    padding: 1rem 1.3rem;
+    color: white;
+}
+
+
+/*=============== FOOTER ===============*/
+/* Footer section styling */
+footer{
+    margin: 2rem 0;
+   padding: 0 11%;
+   text-align: center;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="work.css">
+      <!--Swiper CSS Functionality-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+      <!--Remix Icon-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet"/>
+      <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Syne:wght@400..800&family=Yeseva+One&display=swap" rel="stylesheet">
+      <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <!--Contains the website logo and main navigation menu-->
+            <div id="container">
+                <nav>
+                    <a href="index.html" id="logo">Ceszy</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="exp.html">Experience</a></li>
+                        <!--active page-->
+                        <li><a href="work.html" id="active">Works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--Projects Section Title-->
+            <h2><span>Projects</span> I have created</h2>
+            <div id="grid">
+                <!--Swiper Carousel Container-->
+                <div class="swiper" id="swiperer">
+                    <!--Wrapper for all project slides-->
+                    <div class="swiper-wrapper">
+                         <!--Project 1: Python Exercises-->
+                        <article id="card" class="swiper-slide">
+                            <!--Project Number and Category-->
+                            <div id="number">
+                                <h1>01</h1>
+                                <h3>Programming</h3>
+                            </div>
+                            <!--Project Information-->
+                            <div id="data">
+                                <h1>Python Exercises</h1>
+                                <p>This consist of exercises done during first semester</p>
+                            </div>
+                             <!--Project Image and GitHub Link-->
+                            <div id="image">
+                                <img src="python exer.jpg">
+                                <a href="https://github.com/cherissea/Assessment-1-Programming-Skills-Portfolio">
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </a>
+                            </div>
+                        </article> 
+                        <!--Project 2: Vending Machine-->
+                        <article id="card" class="swiper-slide">
+
+                            <div id="number">
+                                <h1>02</h1>
+                                <h3>Programming</h3>
+                            </div>
+
+                            <div id="data">
+                                <h1 id="title">Vending Machine</h1>
+                                <p id="paragraph">Built a vending machine using the python language</p>
+                            </div>
+
+                            <div id="image">
+                                <img src="pyvend.gif">
+                                <a href="https://github.com/cherissea/Assessment-2-Vending-Machine-">
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </a>
+                            </div>
+                        </article> 
+                        <!--Project 3: Cybersecurity Exercises-->
+                        <article id="card" class="swiper-slide">
+
+                            <div id="number">
+                                <h1>03</h1>
+                                <h3>Cybersecurity</h3>
+                            </div>
+
+                            <div id="data">
+                                <h1 id="title">Cybersecurity Exercises</h1>
+                                <p id="paragraph">Kali Linux, Cisco Packet Tracer, and Windows Commands</p>
+                            </div>
+
+                            <div id="image">
+                                <img src="cybersec.gif">
+                                <a href="https://sway.cloud.microsoft/0Hv81Qu9CExwj4Sw?ref=Link">
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </a>
+                            </div>
+                        </article> 
+                    </div>
+                    <!--Swiper Pagination-->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </main>
+        <!--Swiper JavaScript Library-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <!--Custom Swiper Configuration-->
+        <script src="swiper.js"></script>
+    </body>
+</html>

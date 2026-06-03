@@ -1,0 +1,230 @@
+/*=============== BASE STYLES ===============*/
+/* Reset default browser styling */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-image:url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+/*=============== HEADER & NAVIGATION ===============*/
+#logo{
+    font-family:'Syne',sans-serif;
+    font-size: 50px;
+}
+/* Main navigation container */
+#container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+#logo{
+    font-family:'Syne', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation menu links */
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Navigation hover effect */
+nav ul li a:hover{
+    color:blueviolet;
+    font-size: 25px;
+    transition: 0.4s;
+}
+/* Active page indicator */
+#active{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+/* Main content and experience section layout */
+main, section{
+    position: relative; 
+    margin: 2rem 0;
+    padding: 0 10%;
+}
+
+/* Introduction overview */
+#data h2{
+    font-family: 'Syne',sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#data span{
+    color: blueviolet;
+}
+
+#data p{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+/*=============== EXPERIENCE SECTION ===============*/
+/* Experience section title */
+#htext{
+    font-family: 'Syne',sans-serif;
+    font-size:5rem;
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Experience container */
+#con{
+    row-gap: 3rem;
+    overflow-y: clip;
+}
+
+/*=============== TAB NAVIGATION ===============*/
+/* Tab button container */
+#tabs{
+    background-color: black;
+    padding: 1.25rem 2rem;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Tab buttons */
+.butt{
+    background:none;
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor:pointer;
+    transition: color .4s;
+    border: none;
+}
+
+/* Tab hover effect */
+.butt:hover{
+    color: blueviolet;
+}
+
+/* Active tab */
+#tabs .act{
+    color: blueviolet;
+} 
+
+/*=============== EXPERIENCE DETAILS ===============*/
+/* Content container for work and certifications */
+#details{
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* Work and certification content layout */
+.workcon{
+    display: grid;
+    row-gap: 4rem ;
+}
+
+/* Individual experience card */
+#card{
+    display: grid;
+    row-gap: 1rem;
+    margin: 1rem;
+}
+
+/* Experience information header */
+#expdata{
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Job title or certification title */
+#expdata h1{
+    font-family: 'Syne', sans-serif;
+    font-size:3rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+/* Organization name */
+#expdata h3{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+/* Year or duration */
+#expdata h2{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+/* Certificate links */
+#card a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*=============== TIMELINE DESIGN ===============*/
+/* Vertical timeline line */
+#line{
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg,
+                hsla(255,60%,64%,0),
+                hsl(255, 60%, 56%));
+    position:absolute;
+    top:0;
+    left: .75rem;
+}
+
+#line:after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: hsl(255, 60%, 56%);
+    border-radius: 50%;
+    position:absolute;
+    bottom: -1px;
+    left: -6px;
+}
+
+/*=============== TAB CONTENT DISPLAY ===============*/
+/* Hide all content sections by default */
+#details [data-content]{
+    display:none;
+}
+/* Show active content section */
+#details .act[data-content]{
+    display: grid;
+} 
+

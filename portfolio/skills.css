@@ -1,0 +1,155 @@
+/*=============== BASE STYLES ===============*/
+/* Reset default browser styling */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-image:url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+/*=============== HEADER & NAVIGATION ===============*/
+#logo{
+    font-family:'Syne',sans-serif;
+    font-size: 50px;
+}
+/* Main navigation container */
+#container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+#logo{
+    font-family:'Syne', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+/* Navigation menu links */
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+/* Navigation hover effect */
+nav ul li a:hover{
+    color:blueviolet;
+    font-size: 25px;
+    transition: 0.4s;
+}
+/* Active page indicator */
+#active{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+
+/* Main content container */
+main{
+   margin: 2rem 0;
+   padding: 0 7%;
+}
+
+/* Skills section title  and overview*/
+#title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-family: 'Syne', sans-serif;
+}
+
+#title span {
+    color: blueviolet;
+}
+
+main p{
+    margin: 0 1rem 3rem;
+    text-align: center;
+}
+
+/*=============== SKILL ICONS ===============*/
+/* Technology logos */
+img{
+    width: 50px;
+    height: 50px;
+}
+/* Remove default list styling */
+main li{
+    list-style-type: none;
+}
+
+/*=============== SKILL CARDS ===============*/
+/* Skill category heading */
+article h2{
+    font-size: 2rem;;
+    margin-bottom: 1rem;
+}
+
+/* Skill card container */
+#card{
+    position: relative;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    overflow: hidden;
+    margin: 2rem;
+    background: linear-gradient(to bottom right,
+            rgba(255, 255, 255, 0),
+            rgba(50, 31, 74, 0.8))
+}
+
+/* Skill category title and icon */
+#prof{
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    justify-content: center;
+    z-index:5;
+}
+
+i{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*=============== SKILLS LIST ===============*/
+/* Container for skill items */
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1rem;
+    z-index: 5;
+}
+
+#list li{
+  display: flex;
+  align-self: center;
+  column-gap: 0.25rem;
+  transition: filter 0.4s;
+}
+
+/* Skill hover effect */
+#list li:hover{
+    filter: drop-shadow(0 0 12px rgb(154, 70, 233));
+}

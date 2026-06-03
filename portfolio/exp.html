@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="exp.css">
+      <!--Remix Icon Font CDN for Icons-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet"/>
+       <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Syne:wght@400..800&family=Yeseva+One&display=swap" rel="stylesheet">
+      <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <!--Contains the website logo and main navigation menu-->
+            <div id="container">
+                <nav>
+                    <!--Site Logo-->
+                    <a href="index.html" id="logo">Ceszy</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <!--active page-->
+                        <li><a href="exp.html" id="active">Experience</a></li>
+                        <li><a href="work.html">Works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--Background Shadow Effect-->
+            <div id="shadow"></div>
+            <!--Introduction Section-->
+            <div id="abcon">
+                <div id="data">
+                    <h2>Aspiring <span>Cybersecurity</span> Professional</h2>
+                    <p>A dedicated Cybersecurity student passionate about technology, digital security, and continuous learning. Eager to expand knowledge and develop practical skills in cybersecurity, networking, and information security while gaining hands-on experience through academic projects and professional opportunities. Committed to staying updated with emerging technologies and industry best practices</p>
+                </div>
+            </div>
+        </main>
+        <section>
+            <!--Experience Section Title-->
+            <h2 id="htext">Experience</h2>
+            <div id="expcon">
+                <!--Tab Navigation-->
+                <div id="tabs">
+                    <button class="butt act" data-target="work">Work</button>
+                    <button class="butt" data-target="cert">Certifications</button>
+                </div>
+                 <!--Experience and Certification Content-->
+                <div id="details">
+                    <!--Timeline Line-->
+                    <div id="line"></div>
+                    <!--Work Experience Tab-->
+                    <div class="workcon act" data-content id="work">
+                        <!--Work Experience Card-->
+                        <div id="card">
+                            <div id="expdata">
+                                <div>
+                                   <h1>Waitress/Cashier</h1> 
+                                   <h3>Cusina Restaurant</h3>
+                                </div>
+                                <h2>2025-Current</h2>
+                            </div>
+                            <p>Gained experience in customer service, cash handling, communication, and multitasking while working as a Waitress/Cashier in a busy restaurant environment </p>
+                        </div>
+                    </div>
+                    <!--Certification Tab-->
+                    <div class="workcon" data-content id="cert">
+                        <!--Certification Card 1-->
+                        <div id="card">
+                            <div id="expdata">
+                                <div>
+                                   <h1>Introduction to Python</h1> 
+                                   <h3>Solo Learn Certifications</h3>
+                                </div>
+                                <h2>2025</h2>
+                            </div>
+                            <!--Certificate Link-->
+                            <a href="https://www.sololearn.com/certificates/CC-PJSB3BLG">View</a>
+                        </div>
+                        <!--Certification Card 2-->
+                        <div id="card">
+                            <div id="expdata">
+                                <div>
+                                   <h1>Introduction to Cybersecurity</h1> 
+                                   <h3>CISCO Certifications</h3>
+                                </div>
+                                <h2>2026</h2>
+                            </div>
+                            <a href="https://www.credly.com/badges/cc5999d0-f4f4-44ba-b3ab-d15013ca613f/public_url">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--Tab Switching JavaScript-->
+    <script src="tabs.js"></script>
+    </body>
+</html>

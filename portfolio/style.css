@@ -1,0 +1,161 @@
+/*=============== BASE STYLES ===============*/
+/* Reset default browser styling */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-image:url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+/*=============== HEADER & NAVIGATION ===============*/
+/* Website logo */
+#logo{
+    font-family:'Syne',sans-serif;
+    font-size: 50px;
+}
+
+/* Main navigation container */
+#container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+#logo{
+    font-family:'Syne', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation menu links */
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Navigation hover effect */
+nav ul li a:hover{
+    color:blueviolet;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+/* Active page indicator */
+#active{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+/* Main container for the home page content */
+#home{
+    position: relative;
+    margin: 1rem 0;
+    padding: 0 10%;
+}
+
+#homecon{
+    position:relative;
+    padding-top: 2rem;
+    row-gap: 3rem;
+}
+
+/* Greeting and name section */
+#data{
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+#data h1{
+    font-family: 'Syne', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+
+/* Profile image*/
+#image{
+    position: relative;
+    display: grid;
+    overflow-y: clip;
+}
+
+img{
+    width: 320px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+/* Shadow and professional title positioning */
+#shadow, #info{
+    position: absolute;
+}
+
+/* Gradient shadow effect below image */
+#shadow{
+    width: 100%;
+    height: 375px;
+    bottom: -2rem;
+    z-index: 1;
+    background: linear-gradient(180deg,
+                hsla(240, 100%, 5%, 0)30%,
+                hsla(240, 100%, 1%,1) 85%);
+}
+
+/* Professional title container */
+#info{
+    z-index: 5;
+    bottom: -2rem;
+    left: 50%;
+    justify-self: center;
+    transform: translateX(-50%);
+}
+
+#info h3{
+    font-family: 'Syne',sans-serif;
+    font-size: 4rem;
+    color: blueviolet;
+    text-shadow: green;
+}
+
+/* Social media and contact icons */
+#social{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+#social a {
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 3rem;
+}
+
+#social a:hover {
+    color: blueviolet;
+    font-size: 4rem;
+    transition: 0.4s;
+}

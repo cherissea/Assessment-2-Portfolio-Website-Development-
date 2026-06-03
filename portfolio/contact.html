@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="contact.css">
+      <!--Remix Icon Font CDN for Icons-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet"/>
+      <!--Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Yeseva+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Syne:wght@400..800&family=Yeseva+One&display=swap" rel="stylesheet">
+      <title>Portfolio</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <!--Contains the website logo and main navigation menu-->
+        <header>
+            <div id="container">
+                <nav>
+                    <!--Site Logo-->
+                    <a href="index.html" id="logo">Ceszy</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="exp.html">Experience</a></li>
+                        <li><a href="work.html">Works</a></li>
+                        <!--active page-->
+                        <li><a href="contact.html"  id="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Contact <span>Me</span></h2>
+            <div id="con">
+                <!--Form using Web3Forms API to handle submissions without a backend server-->
+                <form action="https://api.web3forms.com/submit" method="POST" id="cform" class="cfgrid">
+                    <!-- Hidden Access Key required for Web3Forms API authentication -->
+                    <input type="hidden" name="access_key" value="1140ee8c-9cee-4cf9-aeed-b3ec016a4748">
+                    <!--Input: Name-->
+                    <div id="cgroup">
+                        <input type="text" id="name" name="username" required class="input">
+                        <label for="name" class="label">Name</label>
+                    </div>
+
+                     <!--Input: Email-->
+                     <div id="cgroup">
+                        <input type="email" id="email" name="useremail" required class="input">
+                        <label for="email" class="label">Email</label>
+                    </div>
+
+                    <!--Input: Message Box-->
+                     <div id="cgroup">
+                        <textarea id="textbox" name="usermessage" required class="input"></textarea>
+                        <label for="textbox" class="label">Message</label>
+                    </div>
+
+                    <!--Button submit-->
+                    <button type="submit"class="butt">
+                        <span>Send Message</span>
+                    </button>
+                </form>
+                <div id="ccon">
+                    <!--Email contact Link-->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=m.y.gswaeg@gmail.com" target="blank" id="link">
+                        <div id="info">
+                            <i class="ri-mail-send-fill"></i>
+                            
+                            <div id="text">
+                                <h3>Email</h3>
+                                <address class="adds">m.y.gswaeg@gmail.com</address>
+                            </div>
+                        </div>
+                            <!--go arrow-->
+                            <div id="arrow">
+                                <i id="click" class="ri-arrow-right-up-fill"></i>
+                            </div>
+                    </a>
+
+                    <!--Phone contact Link-->
+                    <a href="tel:+966 566 206 334" target="blank" id="link">
+                        <div id="info">
+                            <i class="ri-phone-fill"></i>
+                            <div id="text">
+                                <h3>Phone Number</h3>
+                                <address class="adds">+966 566 206 334</address>
+                            </div>
+                        </div>
+                            <!--go arrow-->
+                            <div id="arrow">
+                                <i id="click" class="ri-arrow-right-up-fill"></i>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!--copyright-->
+            <h3>© 2026 Ceszy. All rights reserved.</h3>
+        </footer>
+    </body>
+    </html>
